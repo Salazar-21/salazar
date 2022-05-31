@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prueba</title>
+</head>
+<body>
+	<center>
+	<h1>TITULO RANDOM</h1>
+   <script type="text/javascript">
+   	function sumardatos(){
+         var d1= parseInt(document.getElementById(`dato1`).value);//parseInt convierte el texto a numero
+         var d2= parseInt(document.getElementById(`dato2`).value);
+         document.registro.resultado.value=d1+d2;
+   	}
+   	function restardatos(){
+         var d1= parseInt(document.getElementById(`dato1`).value);//parseInt convierte el texto a numero
+         var d2= parseInt(document.getElementById(`dato2`).value);
+         document.registro.resultado.value=d1-d2;
+   	}
+   	function multiplicardatos(){
+         var d1= parseInt(document.getElementById(`dato1`).value);//parseInt convierte el texto a numero
+         var d2= parseInt(document.getElementById(`dato2`).value);
+         document.registro.resultado.value=d1*d2;
+   	}
+   	function dividirdatos(){
+         var d1= parseInt(document.getElementById(`dato1`).value);//parseInt convierte el texto a numero
+         var d2= parseInt(document.getElementById(`dato2`).value);
+         document.registro.resultado.value=d1/d2;
+   	}
+   </script>
+
+   <form name="registro">
+
+   	<table>
+
+   <tr><td>Dato 1</td><td><input type="text" name="dato1" id=dato1></td></tr>
+   <tr><td>Dato 2</td><td><input type="text" name="dato2" id=dato2></td></tr>
+   <tr><br>
+   	<td><input type="button" name="enviar" value="+" onclick="sumardatos()">
+   	<input type="button" name="enviar" value="-" onclick="restardatos()">
+   	<input type="button" name="enviar" value="*" onclick="multiplicardatos()">
+   	<input type="button" name="enviar" value="/" onclick="dividirdatos()"></td>
+   </tr>
+
+   </table>
+   	<table>
+   		<td>resultado:</td>
+   	
+        <td><input type="text" name="resultado" id="resultado"></td>
+   	</table>
+   	</center>
+</body>
+</html>
