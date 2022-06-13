@@ -15,5 +15,5 @@ $json_arr[]=array(
 
 );
 file_put_contents($filename, json_encode($json_arr));
-header("Location:http://localhost/css/miercoles.html")
+header("https://salazar-21.github.io/salazar/miercoles.html")
 ?>
